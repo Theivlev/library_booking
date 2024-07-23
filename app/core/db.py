@@ -17,9 +17,9 @@ class PreBase:
 Base = declarative_base(cls=PreBase)
 
 # для sqlite
-engine = create_async_engine(settings.database_url_lite)
+# engine = create_async_engine(settings.database_url_lite)
 
-# engine = create_async_engine(settings.DATABASE_URL)
+engine = create_async_engine(settings.DATABASE_URL)
 
 
 AsyncSessionLocal = sessionmaker(
